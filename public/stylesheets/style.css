@@ -1,0 +1,159 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Open Sans",Arial,sans-serif;
+    background-color: #606060;
+    color: #fff;
+    
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    
+  }
+  html    {
+    font-size: calc(.5em + 1vw);
+    
+}
+.container {
+  /* margin: 0; */
+  padding: 0;
+
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+hr {
+  width: calc(100% - 2rem);
+  background-color: #fff !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+a {
+  text-decoration: underline;
+  color: #edf000
+} 
+.anchor{
+  display: block;
+  height: 2rem;
+  margin-top: -2rem;
+}
+
+
+/*  nav bar */
+nav {
+  background-color: #1a3958;
+  width: 100%; 
+}
+
+nav h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar {
+  justify-content: space-between;
+}
+#navbarNavDropdown {
+  flex-grow: 0 !important;
+  margin-right: auto;
+}
+
+.navbar-brand span:first-child {
+  margin-right: 2em;
+}
+.navbar ul {
+  text-align: center;
+  
+}
+.navbar li:hover {
+  background-color: lightslategray;
+}
+.dropdown-menu {
+  background-color: #6c757d;
+  
+}
+.dropdown-menu a:hover {
+  background-color: lightslategray;
+}
+.dropdown-item {
+  color: #fff;
+  text-align: center;
+}
+
+.cell img{
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+
+}
+/* heiden page */
+.heiden .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Media queries */
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+  .heiden .cell {
+    width: calc(50% - 2rem);
+  }
+}
+/* history page */
+#img-shimizu {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px){
+  p {
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+  }
+  #img-shimizu {
+    max-width: 40%;
+    float: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1em;
+  }
+  .heiden .cell {
+    width: calc(25% - 2rem);
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .history hr {
+    width: calc(50% - 3rem);
+    margin-left: 2rem;
+  }
+  #img-shimizu {
+    max-width: 35%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #img-shimizu {
+      max-width: 20%;
+  }
+}
+
