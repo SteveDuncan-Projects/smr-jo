@@ -16,9 +16,7 @@ body {
     
 }
 .container {
-  /* margin: 0; */
   padding: 0;
-
 }
 
 p {
@@ -27,6 +25,7 @@ p {
   text-align: left;
   padding-left: 1rem;
   padding-right: 1rem;
+  
 }
 
 
@@ -63,11 +62,13 @@ nav h1 {
     margin-bottom: 0;
 }
 .navbar {
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
+
 #navbarNavDropdown {
-  flex-grow: 0 !important;
   margin-right: auto;
+  justify-content: flex-end;
 }
 
 .navbar-brand span:first-child {
@@ -97,7 +98,10 @@ nav h1 {
   width: 100%;
   margin-bottom: 1rem;
 
+
 }
+
+
 /* heiden page */
 .heiden .grid {
   width: 100%;
@@ -123,7 +127,8 @@ nav h1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-@media (min-width: 768px){
+
+@media screen and (min-width: 768px){
   p {
     padding-left: 2rem;
     padding-right: 1.5rem;
@@ -132,6 +137,7 @@ nav h1 {
     max-width: 40%;
     float: right;
   }
+  
 }
 @media screen and (min-width: 1024px) {
   html {
@@ -143,17 +149,51 @@ nav h1 {
   h3 {
     font-size: 1rem;
   }
-  .history hr {
-    width: calc(50% - 3rem);
-    margin-left: 2rem;
-  }
+  
   #img-shimizu {
     max-width: 35%;
+  }
+  hr {
+    width: calc(100% - 4rem);
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .text-history hr {
+    width: calc(60% - 2rem);
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 1440px) {
   #img-shimizu {
       max-width: 20%;
+  }
+  .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .heiden .grid {
+    
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  hr, .text-history hr {
+    width: calc(100% - 1rem);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  p {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
